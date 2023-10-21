@@ -53,12 +53,14 @@ const SearchResultsTabNavigator = (props) => {
   }, [])
 
   return (
-    <Tab.Navigator tabBarOptions={{
-      activeTintColor: '#f15454',
-      indicatorStyle: {
-        backgroundColor: '#f15454',
-      }
-    }}>
+    <Tab.Navigator 
+      screenOptions={{
+        activeTintColor: '#f15454',
+        indicatorStyle: {
+          backgroundColor: '#f15454',
+        }
+      }}
+    >
       <Tab.Screen name={"list"}>
         {() => (
           <SearchResults posts={posts} />

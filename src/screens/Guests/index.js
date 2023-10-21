@@ -89,9 +89,8 @@ const GuestsScreen = (props) => {
             params: {
               screen: 'SearchResults',
               params: {
-                guests: adults + children,
-                viewport: route.params.viewport,
-              }
+                screen: 'SearchResults',
+              },
             },
           })
         }
