@@ -11,6 +11,8 @@ import { GooglePlacesAutocomplete } from "react-native-google-places-autocomplet
 
 const DestinationSearchScreen = (props) => {
 
+  const navigation = useNavigation();
+
   const [ inputText, setInputText] = useState('');
 
   return (
@@ -25,7 +27,7 @@ const DestinationSearchScreen = (props) => {
       <FlatList
         data={searchResults}
         renderItem={({item}) => (
-          <Pressable style={styles.row}>
+          <Pressable onPress={() => navigation.navigate('Guests') } style={styles.row}>
             <View style={styles.iconContainer}>
               <Entypo name={"location-pin"} size={30} />
             </View>

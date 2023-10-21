@@ -11,6 +11,7 @@ import { SafeAreaView, StatusBar, View, } from 'react-native';
 
 import Router from './src/navigation/Router';
 
+import GuestsScreen from './src/screens/Guests';
 import HomeScreen from './src/screens/Home';
 import DestinationSearchScreen from './src/screens/DestinationSearch';
 import Post from './src/components/Post';
@@ -26,12 +27,7 @@ const App: () => React$Node = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
-      <SafeAreaView>
-        {/* <HomeScreen /> */}
-        {/* <Post post={post1} />
-        <Post post={post2} /> */}
-        <DestinationSearchScreen />
-      </SafeAreaView>
+      <Router />
     </>
   );
 };

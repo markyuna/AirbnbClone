@@ -4,9 +4,9 @@ import ExploreNavigator from './ExploreNavigator';
 import HomeScreen from '../screens/Home';
 import ProfileScreen from '../screens/Profile';
 
-import Fontisto from 'react-native-vector-icons/Fontisto';
-import FontAwesome from 'react-native-vector-icons/FontAwesome';
-import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
+import { FontAwesome5 } from '@expo/vector-icons';
+// import FontAwesome from 'react-native-vector-icons/FontAwesome';
+// import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import Feather from 'react-native-vector-icons/Feather';
 import EvilIcons from 'react-native-vector-icons/EvilIcons';
 import PostScreen from "../screens/PostScreen";
@@ -24,7 +24,7 @@ const HomeTabNavigator = (props) => {
         component={ExploreNavigator}
         options={{
           tabBarIcon: ({color}) => (
-            <Fontisto name="search" size={25} color={color} />
+            <FontAwesome5 name="search-location" size={25} color={color} />
           ),
         }}
       />
@@ -33,7 +33,7 @@ const HomeTabNavigator = (props) => {
         component={HomeScreen}
         options={{
           tabBarIcon: ({color}) => (
-            <FontAwesome name="heart-o" size={25} color={color} />
+            <FontAwesome5 name="heart" size={25} color={color} />
           ),
         }}
       />
