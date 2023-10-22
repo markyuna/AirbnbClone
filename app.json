@@ -15,7 +15,8 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.markyuna.AirbnbClone"
     },
     "android": {
       "adaptiveIcon": {
@@ -26,6 +27,11 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "92c13873-1d2e-4ac3-9b62-88cfa1c99e28"
+      }
     }
   }
 }
