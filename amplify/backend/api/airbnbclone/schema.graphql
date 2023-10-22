@@ -1,4 +1,4 @@
-type Post @model @auth(rules: [{allow: public}]) {
+type Post @model {
   id: ID!
   image: String!
   type: String!
@@ -12,4 +12,3 @@ type Post @model @auth(rules: [{allow: public}]) {
   latitude: Float!
   longitude: Float!
 }
- 

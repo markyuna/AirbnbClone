@@ -9,9 +9,9 @@ import { listPosts } from '../../graphql/queries';
 
 const SearchResultsMaps = (props) => {
 
-  const { posts } = props;
+  const [ selectedPlaceId, setSelectedPlaceId] = useState(null);
+  const [ posts, setPosts] = useState([]);
 
-  const [selectedPlaceId, setSelectedPlaceId] = useState(null);
 
   const flatlist = useRef();
   const map = useRef();
