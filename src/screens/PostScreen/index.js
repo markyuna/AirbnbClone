@@ -9,13 +9,11 @@ import places from '../../../assets/data/feed';
 const PostScreen = (props) => {
   const route = useRoute();
 
-  console.log(route.params);
-
   const post = places.find(place => place.id === route.params.postId);
 
   return (
     <View style={{backgroundColor: 'white'}}>
-      <DetailedPost post={post} /> 
+      <DetailedPost post={post} />
     </View>
   );
 };
