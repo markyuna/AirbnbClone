@@ -12,7 +12,7 @@ import { StatusBar, } from 'react-native';
 
 import Router from './src/navigation/Router';
 
-import HomeScreen from './src/screens/Home';
+// import HomeScreen from './src/screens/Home';
 
 import { withAuthenticator } from 'aws-amplify-react-native';
 
