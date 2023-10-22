@@ -21,7 +21,8 @@ const HomeTabNavigator = (props) => {
       }}>
       <Tab.Screen
         name={'Explore'}
-        component={ExploreNavigator}
+        // component={ExploreNavigator}
+        component={PostScreen}
         options={{
           tabBarIcon: ({color}) => (
             <FontAwesome5 name="search-location" size={25} color={color} />
